@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Zurenda | Marketing & Business Portfolio</title>
+    <meta name="description" content="Grace Zurenda — Business Administration student at the University at Buffalo specializing in Marketing. Explore my experience, projects, and skills.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <a href="#hero" class="nav-link active" data-section="hero">home</a>
+        <a href="#about" class="nav-link" data-section="about">about me</a>
+        <a href="#skills" class="nav-link" data-section="skills">my skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">experience</a>
+        <a href="#strengths" class="nav-link" data-section="strengths">what i bring</a>
+        <a href="#contact" class="nav-link" data-section="contact">let's connect</a>
+    </nav>
+
+    <!-- Mobile Nav Toggle -->
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-inner">
+                <!-- Decorative elements -->
+                <div class="deco deco-flower-1" aria-hidden="true">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="15" r="12" fill="#f9c5d1" opacity="0.7"/><circle cx="15" cy="35" r="12" fill="#f4a7b9" opacity="0.6"/><circle cx="45" cy="35" r="12" fill="#f9c5d1" opacity="0.7"/><circle cx="30" cy="30" r="8" fill="#f875aa"/></svg>
+                </div>
+                <div class="deco deco-flower-2" aria-hidden="true">
+                    <svg width="45" height="45" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="15" r="12" fill="#fce4ec" opacity="0.7"/><circle cx="15" cy="35" r="12" fill="#f9c5d1" opacity="0.6"/><circle cx="45" cy="35" r="12" fill="#fce4ec" opacity="0.7"/><circle cx="30" cy="30" r="8" fill="#e8a0b7"/></svg>
+                </div>
+                <div class="deco deco-heart" aria-hidden="true">
+                    <svg width="32" height="28" viewBox="0 0 32 28" fill="#f875aa"><path d="M16 28S0 17.6 0 8.8C0 3.9 3.6 0 8 0c2.8 0 5.4 1.5 7 3.8L16 5l1-1.2C18.6 1.5 21.2 0 24 0c4.4 0 8 3.9 8 8.8C32 17.6 16 28 16 28z"/></svg>
+                </div>
+                <div class="deco deco-star-1" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#f875aa"><polygon points="12,0 15,9 24,9 17,15 19,24 12,19 5,24 7,15 0,9 9,9"/></svg>
+                </div>
+                <div class="deco deco-star-2" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#f4a7b9" opacity="0.7"><polygon points="12,0 15,9 24,9 17,15 19,24 12,19 5,24 7,15 0,9 9,9"/></svg>
+                </div>
+                <div class="deco deco-dots" aria-hidden="true">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="#f875aa" opacity="0.3"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="50" cy="10" r="3"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="50" cy="30" r="3"/><circle cx="10" cy="50" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="50" cy="50" r="3"/></svg>
+                </div>
+                <div class="deco deco-circle" aria-hidden="true"></div>
+
+                <!-- Main content -->
+                <div class="hero-left">
+                    <p class="hero-greeting reveal">hello there, i'm</p>
+                    <h1 class="hero-name reveal">Grace!</h1>
+                    <p class="hero-bio reveal">I am a Business Administration student at the <span class="highlight">University at Buffalo</span> with a concentration in <span class="highlight">Marketing</span>, looking for opportunities within the Marketing sector to display my personality and skills.</p>
+                </div>
+
+                <div class="hero-right">
+                    <!-- Polaroid photo -->
+                    <div class="polaroid polaroid-hero reveal">
+                        <div class="polaroid-img">
+                            <img src="headshot.jpg" alt="Grace Zurenda portrait">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ME ==================== -->
+        <section id="about" class="section about-section">
+            <div class="section-inner">
+                <h2 class="section-title reveal">ABOUT ME</h2>
+
+                <div class="about-layout">
+                    <div class="about-left">
+                        <!-- Polaroid with stadium photo -->
+                        <div class="polaroid polaroid-about reveal">
+                            <div class="polaroid-img">
+                                <img src="stadium.jpg" alt="Grace at Highmark Stadium">
+                            </div>
+
+                        </div>
+                        <!-- Decorative tape -->
+                        <div class="deco deco-tape" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="about-right">
+                        <div class="about-card reveal">
+                            <p>I'm a driven junior at the <strong>University at Buffalo</strong>, pursuing a B.S. in Business Administration with a concentration in <strong>Marketing</strong> and a minor in Communication.</p>
+                            <p>I'm passionate about brand storytelling, consumer engagement, and leveraging digital marketing to create impactful experiences.</p>
+                            <p>From managing HR operations at <strong>Highmark Stadium</strong> for the Buffalo Bills to perfecting customer experiences in fast-paced environments, I bring a unique blend of operational excellence and creative thinking to everything I do.</p>
+                        </div>
+
+                        <div class="about-stats reveal">
+                            <div class="stat-pill">
+                                <span class="stat-num counter" data-target="3">0</span><span class="stat-plus">+</span>
+                                <span class="stat-text">Years Experience</span>
+                            </div>
+                            <div class="stat-pill">
+                                <span class="stat-num counter" data-target="4">0</span>
+                                <span class="stat-text">Roles Held</span>
+                            </div>
+                            <div class="stat-pill">
+                                <span class="stat-num counter" data-target="3">0</span>
+                                <span class="stat-text">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scattered decorative elements -->
+                <div class="deco deco-about-flower" aria-hidden="true">
+                    <svg width="50" height="50" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="15" r="12" fill="#f9c5d1" opacity="0.5"/><circle cx="15" cy="35" r="12" fill="#f4a7b9" opacity="0.4"/><circle cx="45" cy="35" r="12" fill="#f9c5d1" opacity="0.5"/><circle cx="30" cy="30" r="8" fill="#f875aa" opacity="0.6"/></svg>
+                </div>
+                <div class="deco deco-about-star" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#f875aa" opacity="0.5"><polygon points="12,0 15,9 24,9 17,15 19,24 12,19 5,24 7,15 0,9 9,9"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS ==================== -->
+        <section id="skills" class="section skills-section">
+            <div class="section-inner">
+                <h2 class="section-title reveal">MY SKILLS</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Digital & Design</h3>
+                        <ul>
+                            <li>Adobe Creative Cloud</li>
+                            <li>Canva</li>
+                            <li>Lightroom</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-laptop"></i></div>
+                        <h3>Productivity</h3>
+                        <ul>
+                            <li>Microsoft Office Suite</li>
+                            <li>Google Workspace</li>
+                            <li>PowerPoint</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3>Marketing</h3>
+                        <ul>
+                            <li>Digital Marketing</li>
+                            <li>Brand Strategy</li>
+                            <li>Consumer Behavior</li>
+                            <li>Social Media</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>Communication</h3>
+                        <ul>
+                            <li>Cross-Functional Collaboration</li>
+                            <li>Conflict Resolution</li>
+                            <li>Public Speaking</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Operations</h3>
+                        <ul>
+                            <li>POS & Cash Management</li>
+                            <li>High-Volume Operations</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Leadership</h3>
+                        <ul>
+                            <li>Team Coordination</li>
+                            <li>Guest Experience</li>
+                            <li>HR Operations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="deco deco-skills-heart" aria-hidden="true">
+                    <svg width="28" height="24" viewBox="0 0 32 28" fill="#f875aa" opacity="0.4"><path d="M16 28S0 17.6 0 8.8C0 3.9 3.6 0 8 0c2.8 0 5.4 1.5 7 3.8L16 5l1-1.2C18.6 1.5 21.2 0 24 0c4.4 0 8 3.9 8 8.8C32 17.6 16 28 16 28z"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERIENCE ==================== -->
+        <section id="experience" class="section experience-section">
+            <div class="section-inner">
+                <h2 class="section-title reveal">EXPERIENCE</h2>
+
+                <div class="exp-grid">
+                    <div class="exp-card reveal">
+                        <div class="exp-date">Aug 2026 – Present</div>
+                        <h3 class="exp-title">Game Day HR Assistant</h3>
+                        <h4 class="exp-company">Legends Global · <span>Orchard Park, NY</span></h4>
+                        <ul class="exp-details">
+                            <li>Managed check-in processes, credential verification, and uniform distribution for game day personnel at Highmark Stadium for the Buffalo Bills 2026–2027 season.</li>
+                            <li>Served as the frontline point of contact for employee inquiries, resolving issues and maintaining a positive work environment during high-stress situations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card reveal">
+                        <div class="exp-date">Mar 2026 – Present</div>
+                        <h3 class="exp-title">Froster</h3>
+                        <h4 class="exp-company">Nothing Bundt Cakes · <span>Amherst, NY</span></h4>
+                        <ul class="exp-details">
+                            <li>Hand-frosted a high volume of baked goods daily with meticulous attention to detail, ensuring absolute aesthetic consistency and product quality.</li>
+                            <li>Fulfilled large-scale daily orders and custom event requests under strict deadlines while maintaining food-safe standards.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card reveal">
+                        <div class="exp-date">May 2025 – Aug 2026</div>
+                        <h3 class="exp-title">Barista</h3>
+                        <h4 class="exp-company">7 Brew Coffee · <span>Syracuse, NY</span></h4>
+                        <ul class="exp-details">
+                            <li>Delivered exceptional guest experiences in a fast-paced, high-volume environment by rapidly processing custom orders and maintaining an energetic atmosphere.</li>
+                            <li>Managed POS transactions efficiently during peak rush hours, ensuring accurate cash handling and rapid service times.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card reveal">
+                        <div class="exp-date">Apr 2023 – Aug 2024</div>
+                        <h3 class="exp-title">Barista</h3>
+                        <h4 class="exp-company">Starbucks Coffee Company · <span>Syracuse, NY</span></h4>
+                        <ul class="exp-details">
+                            <li>Awarded <strong>Barista of the Quarter</strong> (Spring 2024) for consistently providing exceptional customer service and demonstrating strong reliability.</li>
+                            <li>Executed complex, high-volume orders with precision while maintaining rigorous brand standards for quality and presentation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="deco deco-exp-dots" aria-hidden="true">
+                    <svg width="50" height="50" viewBox="0 0 60 60" fill="#f875aa" opacity="0.2"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="50" cy="10" r="3"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="50" cy="30" r="3"/><circle cx="10" cy="50" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="50" cy="50" r="3"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== WHAT I BRING ==================== -->
+        <section id="strengths" class="section strengths-section">
+            <div class="section-inner">
+                <h2 class="section-title reveal">WHAT I BRING</h2>
+
+                <div class="strengths-grid">
+                    <div class="strength-card reveal">
+                        <div class="strength-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3>Meticulous Attention to Detail</h3>
+                        <p>From hand-frosting hundreds of cakes to managing credential verification for NFL game days, I bring precision and care to every task — no matter how big or small.</p>
+                    </div>
+                    <div class="strength-card reveal">
+                        <div class="strength-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>Customer-First Mindset</h3>
+                        <p>Awarded <strong>Barista of the Quarter</strong> at Starbucks for a reason — I prioritize creating positive, memorable experiences that keep people coming back.</p>
+                    </div>
+                    <div class="strength-card reveal">
+                        <div class="strength-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h3>Adaptability Under Pressure</h3>
+                        <p>Whether it's peak-hour coffee rushes or high-stress stadium operations, I thrive in fast-paced environments and stay composed when it counts.</p>
+                    </div>
+                </div>
+
+                <!-- Education & Certs inline -->
+                <div class="edu-row reveal">
+                    <div class="edu-main-card">
+                        <div class="edu-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h3>B.S. Business Administration</h3>
+                            <p class="edu-school">University at Buffalo, SUNY · <em>Expected May 2028</em></p>
+                            <p class="edu-focus">Concentration in Marketing · Minor in Communication</p>
+                            <div class="tag-row">
+                                <span class="tag">Principles of Marketing</span>
+                                <span class="tag">Consumer Behavior</span>
+                                <span class="tag">Digital Marketing</span>
+                                <span class="tag">Statistics for Analytics</span>
+                                <span class="tag">Mass Communication</span>
+                                <span class="tag">Communication Literacy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certs-row reveal">
+                    <div class="cert-pill"><i class="fa-brands fa-google"></i> Google Analytics Certification <span>Expected Oct 2026</span></div>
+                    <div class="cert-pill"><i class="fa-brands fa-google"></i> Google Digital Marketing & E-commerce <span>Aug 2026</span></div>
+                    <div class="cert-pill"><i class="fa-solid fa-award"></i> Stukent Marketing Simternship <span>Apr 2026</span></div>
+                </div>
+
+                <div class="deco deco-str-flower" aria-hidden="true">
+                    <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="15" r="12" fill="#f9c5d1" opacity="0.5"/><circle cx="15" cy="35" r="12" fill="#f4a7b9" opacity="0.4"/><circle cx="45" cy="35" r="12" fill="#f9c5d1" opacity="0.5"/><circle cx="30" cy="30" r="8" fill="#f875aa" opacity="0.6"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact" class="section contact-section">
+            <div class="section-inner contact-inner">
+                <h2 class="section-title reveal">LET'S CONNECT</h2>
+
+                <div class="contact-card reveal">
+                    <p class="contact-text">I'm currently seeking summer internship opportunities in marketing, brand management, and business strategy. I'd love to hear from you!</p>
+                    <a href="mailto:Gracezur@buffalo.edu" class="contact-btn"><i class="fa-regular fa-envelope"></i> Email Me</a>
+                    <div class="social-row">
+                        <a href="https://linkedin.com/in/grace-zurenda" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:Gracezur@buffalo.edu" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="tel:3158836094" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <p class="footer-text">&copy; 2026 Grace Zurenda · Crafted with <i class="fa-solid fa-heart" style="color:#f875aa"></i></p>
+
+                <div class="deco deco-contact-heart" aria-hidden="true">
+                    <svg width="36" height="32" viewBox="0 0 32 28" fill="#f875aa" opacity="0.3"><path d="M16 28S0 17.6 0 8.8C0 3.9 3.6 0 8 0c2.8 0 5.4 1.5 7 3.8L16 5l1-1.2C18.6 1.5 21.2 0 24 0c4.4 0 8 3.9 8 8.8C32 17.6 16 28 16 28z"/></svg>
+                </div>
+                <div class="deco deco-contact-star" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#f4a7b9" opacity="0.4"><polygon points="12,0 15,9 24,9 17,15 19,24 12,19 5,24 7,15 0,9 9,9"/></svg>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
