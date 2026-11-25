@@ -127,23 +127,23 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-carousel]').forEach(carousel => {
     const track = carousel.querySelector('.carousel-track');
     const slides = carousel.querySelectorAll('.carousel-slide');
-    const prevBtn = carousel.querySelector('.carousel-btn-prev');
-    const nextBtn = carousel.querySelector('.carousel-btn-next');
-    const dotsContainer = carousel.querySelector('.carousel-dots');
+    const prevBtn = carousel.querySelector('.car-prev');
+    const nextBtn = carousel.querySelector('.car-next');
+    const dotsContainer = carousel.querySelector('.car-dots');
     let current = 0;
     const total = slides.length;
 
     // Create dots
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
-      dot.classList.add('carousel-dot');
+      dot.classList.add('car-dot');
       if (i === 0) dot.classList.add('active');
       dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
       dot.addEventListener('click', () => goTo(i));
       dotsContainer.appendChild(dot);
     });
 
-    const dots = dotsContainer.querySelectorAll('.carousel-dot');
+    const dots = dotsContainer.querySelectorAll('.car-dot');
 
     function goTo(index) {
       current = ((index % total) + total) % total;

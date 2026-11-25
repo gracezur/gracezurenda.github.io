@@ -637,201 +637,155 @@ img { max-width:100%; display:block; }
    PROJECTS SECTION
    ============================================= */
 .projects-section {
-  background: var(--pink-bg);
-  min-height: auto;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.project-card {
   background: var(--white);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 2px solid transparent;
-  transition: all var(--transition);
+}
+
+.projects-row {
   display: flex;
-  flex-direction: column;
+  gap: 28px;
+  align-items: flex-start;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-pink);
-  border-color: var(--pink-soft);
+.proj-box {
+  flex: 1;
+  min-width: 0;
 }
 
-/* Carousel */
-.carousel {
+/* The square Instagram-style frame */
+.proj-frame {
   position: relative;
-  overflow: hidden;
+  width: 100%;
   aspect-ratio: 1 / 1;
-  background: #eee;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--pink-pale);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
 }
 
-.carousel-track {
+.proj-frame > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.proj-box:hover .proj-frame {
+  box-shadow: var(--shadow-pink);
+  transform: translateY(-4px);
+}
+
+/* Carousel inside frame */
+.carousel .carousel-track {
   display: flex;
   height: 100%;
   transition: transform 0.45s cubic-bezier(.4,0,.2,1);
   will-change: transform;
 }
 
-.carousel-slide {
+.carousel .carousel-slide {
   min-width: 100%;
   height: 100%;
 }
 
-.carousel-slide img {
+.carousel .carousel-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.carousel-btn {
+.car-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: none;
   background: rgba(255,255,255,.85);
-  backdrop-filter: blur(4px);
   color: var(--dark);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all var(--transition);
   z-index: 3;
-  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
   opacity: 0;
+  transition: all var(--transition);
 }
 
-.carousel:hover .carousel-btn { opacity: 1; }
+.proj-frame:hover .car-btn { opacity: 1; }
+.car-btn:hover { background: var(--pink-hot); color: var(--white); }
+.car-prev { left: 8px; }
+.car-next { right: 8px; }
 
-.carousel-btn:hover {
-  background: var(--pink-hot);
-  color: var(--white);
-}
-
-.carousel-btn-prev { left: 10px; }
-.carousel-btn-next { right: 10px; }
-
-.carousel-dots {
+.car-dots {
   position: absolute;
-  bottom: 12px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 6px;
+  gap: 5px;
   z-index: 3;
 }
 
-.carousel-dot {
-  width: 7px;
-  height: 7px;
+.car-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: rgba(255,255,255,.5);
   border: none;
+  padding: 0;
   cursor: pointer;
   transition: all var(--transition);
-  padding: 0;
 }
 
-.carousel-dot.active {
+.car-dot.active {
   background: var(--white);
-  transform: scale(1.3);
-  box-shadow: 0 0 4px rgba(0,0,0,.2);
-}
-
-/* Static project image */
-.project-static-img {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #eee;
-}
-
-.project-static-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-static-img img {
-  transform: scale(1.03);
+  transform: scale(1.35);
 }
 
 /* WIP placeholder */
-.project-wip-placeholder {
-  aspect-ratio: 1 / 1;
+.proj-wip {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
   background: var(--pink-pale);
 }
 
-.project-wip-placeholder i {
-  font-size: 3rem;
+.proj-wip i {
+  font-size: 2.4rem;
   color: var(--pink-hot);
-  opacity: 0.6;
-  animation: float 4s ease-in-out infinite;
+  opacity: 0.5;
 }
 
-.project-wip-placeholder span {
+.proj-wip span {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--pink-hot);
-  opacity: 0.7;
+  opacity: 0.6;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
-/* Project info */
-.project-info {
-  padding: 22px 24px 26px;
-}
-
-.project-info h3 {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-}
-
-.project-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 4px 12px;
-  border-radius: 50px;
-  background: var(--pink-pale);
-  color: var(--pink-hot);
-  letter-spacing: 0.3px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.project-info p {
+/* Description below each box */
+.proj-desc {
   font-size: 0.88rem;
   color: var(--dark-soft);
-  line-height: 1.7;
+  line-height: 1.65;
+  margin-top: 14px;
+  text-align: center;
 }
 
-/* Staggered reveals */
-.project-card.reveal:nth-child(2) { transition-delay: .1s; }
-.project-card.reveal:nth-child(3) { transition-delay: .2s; }
-
-.deco-proj-star { top: 10%; left: 5%; animation: twinkle 4s ease-in-out infinite; }
-.deco-proj-heart { bottom: 8%; right: 6%; animation: float 6s ease-in-out infinite; }
+.proj-desc strong {
+  color: var(--dark);
+  font-size: 0.95rem;
+}
 
 /* =============================================
    STRENGTHS / WHAT I BRING SECTION
@@ -1135,7 +1089,8 @@ img { max-width:100%; display:block; }
 
   .strengths-grid { grid-template-columns: 1fr 1fr; }
 
-  .projects-grid { grid-template-columns: 1fr 1fr; }
+  .projects-row { flex-wrap: wrap; }
+  .proj-box { flex: 1 1 280px; max-width: 400px; }
 }
 
 @media (max-width: 768px) {
@@ -1157,8 +1112,8 @@ img { max-width:100%; display:block; }
 
   .strengths-grid { grid-template-columns: 1fr; }
 
-  .projects-grid { grid-template-columns: 1fr; }
-  .project-card { max-width: 400px; margin: 0 auto; width: 100%; }
+  .projects-row { justify-content: center; }
+  .proj-box { flex: 1 1 100%; max-width: 340px; }
 
   .certs-row { flex-direction: column; }
   .cert-pill { min-width: unset; }
