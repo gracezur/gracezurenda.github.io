@@ -651,11 +651,11 @@ img { max-width:100%; display:block; }
   min-width: 0;
 }
 
-/* The square Instagram-style frame */
+/* The portrait 4:5 Instagram-style frame */
 .proj-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   border-radius: 14px;
   overflow: hidden;
   background: var(--pink-pale);
